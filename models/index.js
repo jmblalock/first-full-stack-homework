@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-const connectionString = 'mongodb://localhost:27017/first-full-stack-homework';
 
-mongoose.connect(connectionString, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true,

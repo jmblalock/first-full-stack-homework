@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4000;
 // Set View Engine
 app.set('view engine', 'ejs');
 
-// Pwds Controller
+// Controllers
 const pwdsCtrl = require('./controllers/pwdsController');
 
 // -------------------------- MIDDLEWARE
@@ -39,4 +39,4 @@ app.use('*', (req, res) => {
 });
 
 // -------------------------- LISTENER
-app.listen(PORT, () => console.log(`Server started successfully on port ${PORT}`));
+app.listen(PORT, () => console.log(`Listening on port ${PORT}...`));

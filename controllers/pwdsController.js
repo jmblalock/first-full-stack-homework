@@ -6,11 +6,13 @@ const db = require('../models');
 // INDEX Pwds
 router.get('/', (req, res) => {
     db.Pwd.find({}, (err, allPwds) => {
-        console.log(allPwds);
         if (err) return  console.log(err);
-        res.render('pwds/indexPwd', {
+
+        const context = {
             pwds: allPwds,
-        });
+        };
+
+        res.render('pwds/indexPwd', context);
     });
 });
 
