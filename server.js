@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4000;
 app.set('view engine', 'ejs');
 
 // Controllers
-const pwdsCtrl = require('./controllers/pwdsController');
+const passwordsCtrl = require('./controllers/passwordsController');
 
 // -------------------------- MIDDLEWARE
 // BodyParser
@@ -30,8 +30,8 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-// Pwds Routes
-app.use('/pwds', pwdsCtrl);
+// Passwords Routes
+app.use('/passwords', passwordsCtrl);
 
 // 404 Routes
 app.use('*', (req, res) => {
