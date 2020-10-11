@@ -16,5 +16,5 @@ mongoose.connection.on('error', (error) => {
 });
 
 module.exports = {
-    Pwd: require('./Pwd'),
+    Password: require('./Password'),
 };

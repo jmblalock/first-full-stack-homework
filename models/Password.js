@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // Schema
-const pwdSchema = new Schema({
+const passwordSchema = new Schema({
     website: {
         type: String,
         required: true,
@@ -14,6 +14,6 @@ const pwdSchema = new Schema({
 }, {timestamps: true});
 
 // Pwd Model allows us to query the Pwd collection
-const Pwd = mongoose.model('Pwd', pwdSchema);
+const Password = mongoose.model('Password', passwordSchema);
 
-module.exports = Pwd;
+module.exports = Password;

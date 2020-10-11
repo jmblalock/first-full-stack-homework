@@ -1,3 +1,3 @@
 module.exports = {
-    pwds: require('./pwdsController')
+    pwds: require('./passwordsController')
 };
