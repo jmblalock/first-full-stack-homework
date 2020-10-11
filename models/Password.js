@@ -13,7 +13,7 @@ const passwordSchema = new Schema({
     }
 }, {timestamps: true});
 
-// Pwd Model allows us to query the Pwd collection
+// Password Model allows us to query the Password collection
 const Password = mongoose.model('Password', passwordSchema);
 
 module.exports = Password;

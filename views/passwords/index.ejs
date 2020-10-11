@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager</title>
+</head>
+<body>
+  <%- include('../partials/header') %>
+
+  <main>
+      <h2>All Passwords</h2>
+      <ul>
+          <% for (let i = 0; i < passwords.length; i++) { %>
+              <li>
+                  <a href="/passwords/<%= passwords[i]._id %>"><%= passwords[i].website %></a>
+              </li>
+          <% } %>
+      </ul>
+  </main>
+</body>
+</html>

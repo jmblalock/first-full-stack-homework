@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Manager</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager</title>
 </head>
 <body>
-    <%- include('../partials/header') %>
+  <%- include('../partials/header') %>
 
-    <main>
-        <h2>Add a Password</h2>
-        <form action="/passwords" method="POST">
-            <label for="website">Website: </label>
-            <input type="text" id="website" name="website" />
-            <label for="password">Password: </label>
-            <input type="text" id="password" name="password" />
-            <button type="submit">Add Password</button>
-        </form>
-    </main>
-    
+  <main>
+      <h2>Add a Password</h2>
+      <form action="/passwords" method="POST">
+          <label for="website">Website: </label>
+          <input type="text" id="website" name="website" />
+          <label for="password">Password: </label>
+          <input type="text" id="password" name="password" />
+          <button type="submit">Add Password</button>
+      </form>
+  </main>
 </body>
 </html>
